@@ -17,7 +17,11 @@ class status_post(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.driver = webdriver.Chrome()
+        chrome_options = webdriver.ChromeOptions()
+        prefs = {"profile.default_content_setting_values.notifications": 2}
+        chrome_options.add_experimental_option("prefs", prefs)
+        cls.driver = webdriver.Chrome(chrome_options=chrome_options)
+        # cls.driver = webdriver.Chrome()
         # cls.driver.implicitly_wait(10)
         cls.driver.maximize_window()
 
