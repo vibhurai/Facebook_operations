@@ -37,7 +37,7 @@ class status_post(unittest.TestCase):
         home.click()
         driver.get('https://www.facebook.com/kaustubh.rai.52/')
         dash = dash_class(driver)
-        dash.click_friend_button()
+        dash.add_frnd()
 
 
 
