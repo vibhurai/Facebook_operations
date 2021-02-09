@@ -28,8 +28,8 @@ class status_post(unittest.TestCase):
         driver = self.driver
         driver.get('https://en-gb.facebook.com/login/')
         login = login_class(driver)
-        login.enter_username("kr619@rediffmail.com")
-        login.enter_pass("kr619r")
+        login.enter_username("shilarai26@gmail.com")
+        login.enter_pass("viDhu@2007")
         login.click()
 
     def test_post_status(self):
@@ -38,7 +38,8 @@ class status_post(unittest.TestCase):
         driver.get('https://www.facebook.com/')
         home = homepage_class(driver)
         home.click()
-        driver.get('https://www.facebook.com/kaustubh.rai.52/')
+        time.sleep(3)
+        driver.get(driver.current_url)
         dash = dash_class(driver)
         dash.click()
         dash.give_status("Feeling good!")

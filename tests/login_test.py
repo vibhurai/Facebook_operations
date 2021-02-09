@@ -27,9 +27,10 @@ class logintest(unittest.TestCase):
     def test_login(self):
         driver = self.driver
         driver.get('https://en-gb.facebook.com/login/')
+        # print(driver.current_url)
         login = login_class(driver)
-        login.enter_username("kr619@rediffmail.com")
-        login.enter_pass("kr619r")
+        login.enter_username("shilarai26@gmail.com")
+        login.enter_pass("viDhu@2007")
         login.click()
 
     @classmethod

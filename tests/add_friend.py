@@ -43,10 +43,6 @@ class status_post(unittest.TestCase):
         dash = dash_class(driver)
         dash.add_frnd()
 
-
-
-
-
     @classmethod
     def tearDownClass(cls):
         time.sleep(15)
