@@ -1,16 +1,10 @@
 from selenium import webdriver
 import unittest
-# import org.openqa.selenium.Keys
 import HtmlTestRunner
 from Kaustubh.proj_2.pages.login import login_class
 from Kaustubh.proj_2.pages.homepage import  homepage_class
 from Kaustubh.proj_2.pages.dashboard import dash_class
-from Kaustubh.proj_2.pages.friends import friends_class
 from selenium import webdriver
-from selenium.webdriver.common import utils
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
 
 class status_post(unittest.TestCase):
