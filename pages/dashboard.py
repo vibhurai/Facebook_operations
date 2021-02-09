@@ -25,8 +25,9 @@ class dash_class:
 
         #comment_positions
         self.friend_button = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[3]/div/div/div/div[1]/div/div/div[1]/div/div/div/div/div/div/a[3]/div[2]'
-        self.friend_name_posn = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]/div[1]/div[2]/div[1]/a/span'
-        self.comment_posn = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div[2]/div/div[2]/div[3]/div[2]/div/div/div/div/div/div/div/div/div/div/div[2]/div/div[4]/div/div/div[2]/div[5]/div[2]/div/div/div/div/form/div/div/div[2]/div/div/div/div'
+        self.friend_search_button = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[1]/div[2]/div[1]/label/input'
+        self.friend_name_posn = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div/div/div/div/div/div[3]/div[31]/div[2]/div[1]/a/span'
+        self.comment_posn = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div[2]/div/div[2]/div[3]/div[4]/div/div/div/div/div/div/div/div/div/div/div[2]/div/div[4]/div/div/div[2]/div[5]/div[2]/div/div/div/div/form/div/div/div[2]/div/div/div/div'
 
 
     def give_status(self, status):
@@ -47,10 +48,12 @@ class dash_class:
         button = self.driver.find_element_by_xpath(self.friend_button)
         self.driver.execute_script("arguments[0].click();", button)
         time.sleep(3)
-        button = self.driver.find_element_by_xpath(self.friend_name_posn)
+        button = self.driver.find_element_by_xpath(self.friend_search_button)
         self.driver.execute_script("arguments[0].click();", button)
+        button.send_keys('shila')
+        button.send_keys(Keys.ENTER)
 
-        self.driver.get('https://www.facebook.com/gaurav.rai.798278')
+        self.driver.get('https://www.facebook.com/profile.php?id=100011279206876')
         time.sleep(3)
         button = self.driver.find_element_by_xpath(self.comment_posn)
         self.driver.execute_script("arguments[0].click();", button)
