@@ -33,8 +33,8 @@ class dash_class:
         self.about_btn = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[3]/div/div/div/div[1]/div/div/div[1]/div/div/div/div/div/div/a[2]/div[1]'
         self.cities_lived = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[1]/div[4]/a'
         self.city_link = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div/div/div/div[1]/div/div/div/div/div[2]/div/div/div/div[3]/div/div/div[1]/div/div[2]/div[1]/a/div/span'
-        self.local_post_link = '//*[@id="contentArea"]/div[1]/div/div/div[2]/div[2]/div/button[2]'
-        self.person_name = '/html/body/div[1]/div/div[1]/div/div[4]/div/div/div[1]/div/div[3]/div[2]/div/div[3]/div[2]/div/div/div[1]/div[1]/div[1]/div[1]/div[2]/div/div[1]/span/div/h2/span/div/a'
+        self.person_name_on_city_page = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div[4]/div/div/div[2]/div/div/div/div/div[2]/div/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div[2]/div/div[1]/span/h2/strong[1]/span/a/div/span'
+        self.friend_request_btn = '/html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div/div[4]/div[1]/div/div/div/div/div/div/div/div[2]/div/div[1]/div[2]/span/span'
 
 
     def give_status(self, status):
@@ -79,7 +79,6 @@ class dash_class:
         button = self.driver.find_element_by_xpath(self.about_btn)
         self.driver.execute_script("arguments[0].click();", button)
 
-        # self.driver.get('https://www.facebook.com/kaustubh.rai.52/about')
         time.sleep(2)
         button = self.driver.find_element_by_xpath(self.cities_lived)
         self.driver.execute_script("arguments[0].click();", button)
@@ -89,13 +88,14 @@ class dash_class:
         self.driver.execute_script("arguments[0].click();", button)
 
         time.sleep(2)
-        # self.driver.implicitly_wait(20)
-        # self.driver.get('https://www.facebook.com/places/Things-to-do-in-Delhi-India/102161913158207/')
-        self.driver.implicitly_wait(20)
-        button = self.driver.find_element_by_xpath(self.local_post_link)
+        self.driver.get(self.driver.current_url)
+        time.sleep(2)
+        button = self.driver.find_element_by_xpath(self.person_name_on_city_page)
+        self.driver.execute_script("arguments[0].click();", button)
+        time.sleep(2)
+        self.driver.get(self.driver.current_url)
+        time.sleep(2)
+        button = self.driver.find_element_by_xpath(self.friend_request_btn)
         self.driver.execute_script("arguments[0].click();", button)
 
-        # time.sleep(5)
-        # button = self.driver.find_element_by_xpath(self.person_name)
-        # self.driver.execute_script("arguments[0].click();", button)
 
