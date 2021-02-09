@@ -23,8 +23,8 @@ class status_post(unittest.TestCase):
         driver = self.driver
         driver.get('https://en-gb.facebook.com/login/')
         login = login_class(driver)
-        login.enter_username("shilarai26@gmail.com")
-        login.enter_pass("viDhu@2007")
+        login.enter_username("ENTER USERNAME HERE")
+        login.enter_pass("ENTER PASSWORD HERE")
         login.click()
 
     def test_post_status(self):
@@ -47,5 +47,3 @@ class status_post(unittest.TestCase):
         cls.driver.quit()
         print("Test Completed")
 
-    # if __name__ == '__main__':
-    #         unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output=r'C:\Users\user\Desktop\Kaustubh\Proj_1\Test\Reports'))
