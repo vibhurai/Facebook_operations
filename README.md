@@ -39,6 +39,6 @@ USER GUIDE:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1> THE USER WOULD NEED TO CLONE THE REPOSITORY AND ENTER HIS CREDENTIALS IN THE FILES "TEST" FOLDER (EX : LINES 24 AND 25 IN "login_test.py") 
 
-2> RUN THE TEST FILE
+2> RUN THE TEST FILE FROM THE IDE INTERFACE ITSELF AND NOT THE TERMINAL
 
 3> ENJOY!
