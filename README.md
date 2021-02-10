@@ -18,7 +18,7 @@ The Given Project Takes The Facebook Username And Password And Does The Followin
 3. Add A Freind Who Lives In The Same Location (City) As User
    (Demo: https://drive.google.com/file/d/1cysI1Xv9T9jBxKgfXR0dOFn-5f6I6l6C/view?usp=sharing)
 
-4. Comeents On The Latest First Post Of A Random Friend (The Comment Is Passed Through A Funciton Call In The Code)
+4. Comment On The Latest First Post Of A Random Friend (The Comment Is Passed Through A Funciton Call In The Code)
    (Demo: https://drive.google.com/file/d/1iWZIyJ_NbeI097UKduK7TFMGkWjwKWMZ/view?usp=sharing)
 
 -> The Project Is Fully Dynamic. It Does Not Involve Aany Hardcoded Url Links Except For Facebook's Home Page. 
