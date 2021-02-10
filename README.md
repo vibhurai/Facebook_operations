@@ -41,7 +41,7 @@ User Guide:
 
 2> Install The Dependencies As Mentioned In Requirements.txt
 
-3> Download The Chrome Driver From Https://chromedriver.storage.googleapis.com/index.html?path=89.0.4389.23/, Unzip The File And Paste The Execution File The "Python Folder"
+3> Download The Chrome Driver From https://chromedriver.chromium.org/downloads, Unzip The File And Paste The Execution File The "Python Folder"
  (Ex : C:\users\user\appdata\local\programs\python\python39)
  
 3> Run The Test File From The IDE Interface Itself (Preferably PyCharm) And Not The Terminal
