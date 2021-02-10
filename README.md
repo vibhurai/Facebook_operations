@@ -20,6 +20,8 @@ The Given Project Takes The Facebook Username And Password And Does The Followin
 
 4. Comment On The Latest First Post Of A Random Friend (The Comment Is Passed Through A Funciton Call In The Code)
    (Demo: https://drive.google.com/file/d/1iWZIyJ_NbeI097UKduK7TFMGkWjwKWMZ/view?usp=sharing)
+   
+   (Sorry for the video quality :P)
 
 -> The Project Is Fully Dynamic. It Does Not Involve Aany Hardcoded Url Links Except For Facebook's Home Page. 
 
