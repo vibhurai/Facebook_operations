@@ -1,44 +1,59 @@
-# Facebook_operations
+# Facebook Operations
 
 
-NOTE: SELENIUM HAS BEEN USED FOR MAKING THE BOT
+Note: Selenium Has Been Used For Making The Bot
 ===============================================================================================================================================================================
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-KEY FEATURES AND POINT:
+Key Features And Point:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-THE GIVEN PROJECT TAKES THE FACEBOOK USERNAME AND PASSWORD AND DOES THE FOLLOWING OPERAIONS:
+The Given Project Takes The Facebook Username And Password And Does The Following Operaions:
 
-1. LOGIN
-2. UPDATE THE USER'S STATUS
-3. ADD A FREIND WHO LIVES IN THE SAME LOCATION (CITY) AS USER
-4. COMEENTS ON THE LATEST FIRST POST OF A RANDOM FRIEND (THE COMMENT IS PASSED THROUGH A FUNCITON CALL IN THE CODE)
+1. Login
+   (Demo: https://drive.google.com/file/d/10hnlgsl-exMB5Jy65ZNUMYn0rNf2cdqF/view?usp=sharing)
 
--> THE PROJECT IS FULLY DYNAMIC. IT DOES NOT INVOLVE AANY HARDCODED URL LINKS EXCEPT FOR FACEBOOK'S HOME PAGE. 
+2. Update The User's Status
+   (Demo: https://drive.google.com/file/d/1QiWtb9PWCNC0O1_ezJ4MeBoT4vurWtFz/view?usp=sharing)
 
--> THE HTML ELEMENTS LIKE TEXT AREA, BUTTONS, ETC ARRE ASSUMED TO BEGENERIC FOR DIFFERENT USERS, MEANING THAT THE HTML ELEMENT PATH FOR A PARTICULAR TEXT AREA LIKE "WHAT'S ON YOUR MIND" IS THE SAME FOR DIFFERENT USERS AS OULINE OF THE HTML PAFE REMINS CONSTANT THUS THEIR HARDCODED ELEMENT REFERENCES DOES NOT EFFEECT THE DYNAMIC NATURE OF THE APPLICATION.
+3. Add A Freind Who Lives In The Same Location (City) As User
+   (Demo: https://drive.google.com/file/d/1cysI1Xv9T9jBxKgfXR0dOFn-5f6I6l6C/view?usp=sharing)
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-ASSUMPTIONS MADE:
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4. Comment On The Latest First Post Of A Random Friend (The Comment Is Passed Through A Funciton Call In The Code)
+   (Demo: https://drive.google.com/file/d/1iWZIyJ_NbeI097UKduK7TFMGkWjwKWMZ/view?usp=sharing)
 
-a) WHEN THE FACEBOOK PAGE OF THE USER'S CURRENT CITY IS OPENED FOR SENDING FRIEND REQUEST TO A PERSON IN THE SAME LOCATION, IT IS ASSUMED THAT THE FIRST POST ON THE PAGE IS FROM A PERSON AND NOT ANY PUBLIC ORGANISATION. ONLY THEN COULD THE "ADD FRIEND" BUTTON BE ACCESS BY THE CODE. 
+-> The Project Is Fully Dynamic. It Does Not Involve Aany Hardcoded Url Links Except For Facebook's Home Page. 
 
-b) WITH REFERENCE TO THE PREVIOUS POINT, IT IS ALSO ASSUMED THAT THE PEROSN WITH THE LATEST POST ON THE CITY PAGE IS RELATED TO THE  CITY ITSELF AS THERE IS LESS CHACE THAT HE/SHE WOULD POST ABOUUT THE CITY WHEN HE IS NOT FORM THERE.
-
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-PROCEDURES CARRIED OUT FOR VARIOUS TASKS:
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-1> FOR ADDING FRIEND FROM THE CURRENT CITY, THE BOT FIRST GOES TO "ABOUT" SECTION OF THE CURRENT USER, BROWSES THROUGH THE CITIES HE HAS LIVED AND AS THE CURRENT CITY IS USUALLY LISTED AT TOP. IT CLICK THE CITY URL AND IS DIRECTED TO THE FACEBOOK PAGE OF THE CITY. THEN ACCORDING TO ASSUMPTIONS (a) AND (b), IT ADDS THE VERY FIRST PERSON ON THE PAGE AS THE FRIEND
-
-2> FOR POTING ON THE TIMELINE OF A RANDOM FRIEND, THE BOT GOES TO THE "FRIENDS" SECTION OF THE USER AND PICKS THE FIRST FRIEND AND POSTS ON THEIR TIMELINE. IT IS TO BE NOTED THAT THE WAY FRIENDS ARE SHOWN ON FACEBOOK "FRIENDS" SECTION VARIES WITH TIME. THUS THE RANDOMNESS IS MAINTAINED. 
+-> The Html Elements Like Text Area, Buttons, Etc Arre Assumed To Begeneric For Different Users, Meaning That The Html Element Path For A Particular Text Area Like "What's On Your Mind" Is The Same For Different Users As Ouline Of The Html Pafe Remins Constant Thus Their Hardcoded Element References Does Not Effeect The Dynamic Nature Of The Application.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-USER GUIDE:
+Assumptions Made:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1> THE USER WOULD NEED TO CLONE THE REPOSITORY AND ENTER HIS CREDENTIALS IN THE FILES "TEST" FOLDER (EX : LINES 24 AND 25 IN "login_test.py") 
 
-2> RUN THE TEST FILE FROM THE IDE INTERFACE ITSELF AND NOT THE TERMINAL
+A) When The Facebook Page Of The User's Current City Is Opened For Sending Friend Request To A Person In The Same Location, It Is Assumed That The First Post On The Page Is From A Person And Not Any Public Organisation. Only Then Could The "Add Friend" Button Be Access By The Code. 
 
-3> ENJOY!
+B) With Reference To The Previous Point, It Is Also Assumed That The Perosn With The Latest Post On The City Page Is Related To The  City Itself As There Is Less Chace That He/she Would Post Abouut The City When He Is Not Form There.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Procedures Carried Out For Various Tasks:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+1> For Adding Friend From The Current City, The Bot First Goes To "About" Section Of The Current User, Browses Through The Cities He Has Lived And As The Current City Is Usually Listed At Top. It Click The City Url And Is Directed To The Facebook Page Of The City. Then According To Assumptions (A) And (B), It Adds The Very First Person On The Page As The Friend
+
+2> For Poting On The Timeline Of A Random Friend, The Bot Goes To The "Friends" Section Of The User And Picks The First Friend And Posts On Their Timeline. It Is To Be Noted That The Way Friends Are Shown On Facebook "Friends" Section Varies With Time. Thus The Randomness Is Maintained. 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+User Guide:
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1> The User Would Need To Clone The Repository And Enter His Credentials In The Files "Test" Folder (Ex : Lines 24 And 25 In "Login_test.py") 
+
+2> Install The Dependencies As Mentioned In Requirements.txt
+
+3> Download The Chrome Driver From https://chromedriver.chromium.org/downloads, Unzip The File And Paste The Execution File The "Python Folder"
+ (Ex : C:\users\user\appdata\local\programs\python\python39)
+
+4> Change the import dependencies for the files in 'pages' folder as per you own device (Ex: Code line number 4,5,6 in "add_friend.py")
+
+5> Run The Test File From The IDE Interface Itself (Preferably PyCharm) And Not The Terminal
+
+6> Enjoy!
+
