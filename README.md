@@ -52,7 +52,10 @@ User Guide:
 
 3> Download The Chrome Driver From https://chromedriver.chromium.org/downloads, Unzip The File And Paste The Execution File The "Python Folder"
  (Ex : C:\users\user\appdata\local\programs\python\python39)
- 
-3> Run The Test File From The IDE Interface Itself (Preferably PyCharm) And Not The Terminal
 
-4> Enjoy!
+4> Change the import dependencies as per you own device (Ex: Code line number 4,5,6 in "add_friend.py")
+
+5> Run The Test File From The IDE Interface Itself (Preferably PyCharm) And Not The Terminal
+
+6> Enjoy!
+
