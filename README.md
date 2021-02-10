@@ -1,4 +1,4 @@
-# Facebook_operations
+# Facebook Operations
 
 
 Note: Selenium Has Been Used For Making The Bot
@@ -44,6 +44,6 @@ User Guide:
 3> Download The Chrome Driver From Https://chromedriver.storage.googleapis.com/index.html?path=89.0.4389.23/, Unzip The File And Paste The Execution File The "Python Folder"
  (Ex : C:\users\user\appdata\local\programs\python\python39)
  
-3> Run The Test File From The IDE Interface Itself (Preferable PyCharm) And Not The Terminal
+3> Run The Test File From The IDE Interface Itself (Preferably PyCharm) And Not The Terminal
 
 4> Enjoy!
