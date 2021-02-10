@@ -20,8 +20,6 @@ The Given Project Takes The Facebook Username And Password And Does The Followin
 
 4. Comment On The Latest First Post Of A Random Friend (The Comment Is Passed Through A Funciton Call In The Code)
    (Demo: https://drive.google.com/file/d/1iWZIyJ_NbeI097UKduK7TFMGkWjwKWMZ/view?usp=sharing)
-   
-   (Sorry for the video quality :P)
 
 -> The Project Is Fully Dynamic. It Does Not Involve Aany Hardcoded Url Links Except For Facebook's Home Page. 
 
@@ -53,7 +51,7 @@ User Guide:
 3> Download The Chrome Driver From https://chromedriver.chromium.org/downloads, Unzip The File And Paste The Execution File The "Python Folder"
  (Ex : C:\users\user\appdata\local\programs\python\python39)
 
-4> Change the import dependencies as per you own device (Ex: Code line number 4,5,6 in "add_friend.py")
+4> Change the import dependencies for the files in 'pages' folder as per you own device (Ex: Code line number 4,5,6 in "add_friend.py")
 
 5> Run The Test File From The IDE Interface Itself (Preferably PyCharm) And Not The Terminal
 
