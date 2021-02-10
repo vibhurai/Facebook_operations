@@ -39,6 +39,11 @@ USER GUIDE:
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 1> THE USER WOULD NEED TO CLONE THE REPOSITORY AND ENTER HIS CREDENTIALS IN THE FILES "TEST" FOLDER (EX : LINES 24 AND 25 IN "login_test.py") 
 
-2> RUN THE TEST FILE FROM THE IDE INTERFACE ITSELF AND NOT THE TERMINAL
+2> Install the dependencies as mentioned in requirements.txt
 
-3> ENJOY!
+3> Download the chrome driver from https://chromedriver.storage.googleapis.com/index.html?path=89.0.4389.23/, unxzip the file and paste the execution file the "Python Folder"
+ (ex : C:\Users\user\AppData\Local\Programs\Python\Python39)
+ 
+3> RUN THE TEST FILE FROM THE IDE INTERFACE ITSELF AND NOT THE TERMINAL
+
+4> ENJOY!
